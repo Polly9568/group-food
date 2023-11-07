@@ -1,0 +1,98 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/201/original/pngtree-original-pink-grid-plaid-background-picture-image_1297784.jpg?1689528230");
+  background-repeat: repeat;
+  background-size: 30%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 9fr;
+  gap: 30%;
+  justify-items: center;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1,
+h2,
+p,
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px auto;
+}
+
+button {
+  margin: 15px auto;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+article,
+section,
+footer {
+  padding: 20px 60px;
+}
+
+.cake-pic img {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  padding: 30px auto;
+  display: block;
+}
+
+.header-logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.menu-item-text {
+  display: inline-block;
+  list-style-type: none;
+  text-align: right;
+  padding: 5px auto;
+  margin: 5px;
+  font-size: 12px black;
+}
+
+.menu-item {
+  list-style-type: none;
+  -webkit-padding-start: 0%;
+}
+
+.menu-item-text a {
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-item-text a:hover {
+  color: palevioletred;
+}
+
+#container {
+  margin: auto;
+  padding: 10px 20px;
+  max-width: 90%;
+  background: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

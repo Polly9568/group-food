@@ -104,8 +104,26 @@ function changeRecipe() {
 
 button.addEventListener("click", changeRecipe);
 
-const dairyButton = getElementById("dairy");
-dairyButton.content = "vegan";
+//Onmouse over to change button to pink when hovered over.
+
+document.getElementById("toggleRecipeButton").onmouseover = function () {
+  mouseOver();
+};
+document.getElementById("toggleRecipeButton").onmouseout = function () {
+  mouseOut();
+};
+
+function mouseOver() {
+  document.getElementById("toggleRecipeButton").style.backgroundColor = "pink";
+}
+function mouseOut() {
+  document.getElementById("toggleRecipeButton").style.backgroundColor =
+    "#F0F0F0";
+}
+
+// reverse button to default page
+
+// for submit button
 
 function joinCommuity() {
   let name = prompt("What is your name?");
@@ -121,21 +139,22 @@ function joinCommuity() {
     alert("Please enter your name and email address 🚫");
   }
 }
+
 const submitButton = document.getElementById("SubmitButton");
 submitButton.addEventListener("click", joinCommuity);
 
-//Onmouse over to change button to pink when hovered over.
+//onmouseover for submit button
 
-document.getElementById("toggleRecipeButton").onmouseover = function () {
+document.getElementById("SubmitButton").onmouseover = function () {
   mouseOver();
 };
-document.getElementById("toggleRecipeButton").onmouseout = function () {
+document.getElementById("SubmitButton").onmouseout = function () {
   mouseOut();
 };
 
 function mouseOver() {
-  document.getElementById("toggleRecipeButton").style.color = "pink";
+  document.getElementById("SubmitButton").style.backgroundColor = "pink";
 }
 function mouseOut() {
-  document.getElementById("toggleRecipeButton").style.color = "black";
+  document.getElementById("SubmitButton").style.backgroundColor = "#F0F0F0";
 }

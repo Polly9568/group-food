@@ -41,22 +41,21 @@ button {
 }
 
 article,
-section,
 footer {
   padding: 20px 60px;
-}
-
-.cake-pic img {
-  width: 400px;
-  height: 250px;
-  margin: auto;
-  padding: 30px auto;
-  display: block;
 }
 
 .header-logo img {
   width: 100px;
   height: 50px;
+}
+
+.cake-pic img {
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  display: block;
+  justify-items: center;
 }
 
 .menu-item-text {
@@ -85,14 +84,31 @@ footer {
   color: palevioletred;
 }
 
+.recipe-details {
+  text-align: center;
+}
+
 #container {
-  margin: auto;
-  padding: 10px 20px;
+  margin: 30px auto;
+  padding: 20px 30px;
   max-width: 90%;
   background: white;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.team-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.text-hero {
+  text-align: center;
 }

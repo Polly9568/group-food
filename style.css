@@ -25,9 +25,18 @@ ul {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   padding: 10px auto;
+}
+
+p,
+ul {
+  font-size: 16px;
+}
+
+h2 {
+  color: palevioletred;
 }
 
 button {
@@ -37,7 +46,12 @@ button {
   font-weight: bold;
   border: 0px;
   border-radius: 8px;
-  padding: 15px 20px;
+  padding: 15px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 article,
@@ -86,21 +100,26 @@ footer {
 
 .recipe-details {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 #container {
   margin: 30px auto;
   padding: 20px 30px;
   max-width: 90%;
-  background: white;
+  background-color: #fffafa;
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
   text-align: center;
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
 }
 
 .team-pic {
@@ -109,6 +128,11 @@ footer {
   border-radius: 100%;
 }
 
-.text-hero {
+.textCommu {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitButton:hover {
+  background-color: palevioletred;
 }

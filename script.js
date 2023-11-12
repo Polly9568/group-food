@@ -1,13 +1,15 @@
 // i'm try to change the page using .innerHTML the button work alright
-// need to reverse back when click again tho
+// however I can't make it work on the second click
 
-//alert("Welcome to our website! 🍰");
+alert("Welcome to our website! 🍰");
 
 const button = document.getElementById("toggleRecipeButton");
 const content = document.getElementById("content");
 
+// one click switchiing to vegan version
+
 function changeRecipe() {
-  content.innerHTML = `<article>
+  content.innerHTML = `<article id="veganRecipe" class="veganRecipe">
 			<div>
 				<h1>Vegan Victoria Sponge Cake </h1>
 			</div>
@@ -127,26 +129,8 @@ function changeRecipe() {
 }
 
 button.addEventListener("click", changeRecipe);
-//Onmouse over to change button to pink when hovered over.
-// this doesn't work at some point
 
-document.getElementById("toggleRecipeButton").onmouseover = function () {
-  mouseOver();
-};
-document.getElementById("toggleRecipeButton").onmouseout = function () {
-  mouseOut();
-};
-
-function mouseOver() {
-  document.getElementById("toggleRecipeButton").style.backgroundColor =
-    "palevioletred";
-}
-function mouseOut() {
-  document.getElementById("toggleRecipeButton").style.backgroundColor =
-    "#F0F0F0";
-}
-
-// for submit button
+// user input for submit button
 
 function joinCommuity() {
   let name = prompt("What is your name?");
@@ -166,19 +150,19 @@ function joinCommuity() {
 const submitButton = document.getElementById("submitButton");
 submitButton.addEventListener("click", joinCommuity);
 
-//onmouseover for submit button
-
-document.getElementById("submitButton").onmouseover = function () {
-  mouseOver();
-};
-document.getElementById("submitButton").onmouseout = function () {
-  mouseOut();
-};
+//onmouseover for recipe button
 
 function mouseOver() {
-  document.getElementById("submitButton").style.backgroundColor =
+  document.getElementById("toggleRecipeButton").style.backgroundColor =
     "palevioletred";
 }
 function mouseOut() {
-  document.getElementById("submitButton").style.backgroundColor = "#F0F0F0";
+  document.getElementById("toggleRecipeButton").style.backgroundColor = "";
 }
+
+document.getElementById("toggleRecipeButton").onmouseover = function () {
+  mouseOver();
+};
+document.getElementById("toggleRecipeButton").onmouseout = function () {
+  mouseOut();
+};
